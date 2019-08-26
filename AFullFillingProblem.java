@@ -32,7 +32,7 @@ public class AFullFillingProblem
 		System.exit(0);
 	}
 
-//	Params: ArrayList a, index i, original value v, new value x
+//	Params: ArrayList a, index i, original value v, new value x, ArrayList a's size
 	public static void fill(List<Integer> a, int i, int v, int x, int size)
 	{
 		if (i < 0 || i >= size) return;
