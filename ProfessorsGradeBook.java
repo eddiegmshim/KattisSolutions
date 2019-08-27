@@ -40,6 +40,7 @@ public class ProfessorsGradeBook
 		}
 
 		sc.close();
+		System.exit(0);
 	}
 
 	public static int processStudent(Scanner sc, int numberOfAssignments, List<String> studentNames)
