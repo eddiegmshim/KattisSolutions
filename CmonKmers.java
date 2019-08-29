@@ -31,9 +31,7 @@ public class CmonKmers
 		for (int counterQ = 0; counterQ < Q; counterQ++)
 		{
 			kmerListWanted.add(sc.next());
-		}
-
-		System.out.println(totalStringInput);
+		}		
 
 		for (int counterN = 0; counterN < (N - (k - 1)); counterN++)
 		{
