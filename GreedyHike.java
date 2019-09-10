@@ -31,7 +31,7 @@ public class GreedyHike
 			row = new ArrayList<Integer>();
 		}
 
-		for (int yIndex = positionY; yIndex < lengthY - 1; yIndex++)
+		while (positionY < lengthY - 1)
 		{
 			int currentElevation = grid.get(positionX).get(positionY);
 			int positionXMinus1 = Math.max(0, positionX - 1);
