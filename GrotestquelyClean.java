@@ -17,8 +17,10 @@ public class GrotestquelyClean
 				System.out.print("CLEAN");
 				System.exit(0);
 			}
-
+			cleanSum += score;
 		}
+		if (cleanSum >= 30) System.out.print("CLEAN");
+		else System.out.print("DO NOT CLEAN");
 	}
 
 }
