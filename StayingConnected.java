@@ -63,11 +63,9 @@ public class StayingConnected
 		{
 			if (!vertexVisitedMap.get(connectedVertex))
 			{
-				vertexVisitedMap.put(connectedVertex, true);
 				dfs(graphEdges, connectedVertex, vertexVisitedMap);
 			}
 		}
-		return;
 	}
 
 	public static boolean checkAllVerticesVisited(TreeMap<Integer, Boolean> vertexVisitedMap)
