@@ -12,12 +12,12 @@ public class StayingConnected
 		String data = "5\r\n" + "4\r\n" + "0 1\r\n" + "0 2\r\n" + "1 2\r\n" + "3 4";
 		System.setIn(new ByteArrayInputStream(data.getBytes()));
 		Scanner sc = new Scanner(System.in);
-
 		int numberVertices = sc.nextInt();
 		int numberEdges = sc.nextInt();
-
 		TreeMap<Integer, Boolean> vertexVisitedMap = new TreeMap<Integer, Boolean>();
 		TreeMap<Integer, ArrayList<Integer>> graphEdges = new TreeMap<Integer, ArrayList<Integer>>();
+		Boolean allVerticesVisited = false;
+		int numberConnectedGraphs = 0;
 
 		for (int i = 0; i < numberVertices; i++)
 		{
@@ -32,9 +32,6 @@ public class StayingConnected
 			graphEdges.get(v1).add(v2);
 			if (!graphEdges.get(v2).contains(v1)) graphEdges.get(v2).add(v1);
 		}
-
-		Boolean allVerticesVisited = false;
-		int numberConnectedGraphs = 0;
 
 		while (!allVerticesVisited)
 		{
